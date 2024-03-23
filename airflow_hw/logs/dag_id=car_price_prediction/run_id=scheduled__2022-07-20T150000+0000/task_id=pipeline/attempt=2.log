@@ -1,0 +1,10 @@
+[2024-03-23T17:01:24.280+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: car_price_prediction.pipeline scheduled__2022-07-20T15:00:00+00:00 [queued]>
+[2024-03-23T17:01:24.296+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: car_price_prediction.pipeline scheduled__2022-07-20T15:00:00+00:00 [queued]>
+[2024-03-23T17:01:24.297+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-03-23T17:01:24.357+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): pipeline> on 2022-07-20 15:00:00+00:00
+[2024-03-23T17:01:24.384+0000] {standard_task_runner.py:60} INFO - Started process 1663 to run task
+[2024-03-23T17:01:24.402+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'car_price_prediction', 'pipeline', 'scheduled__2022-07-20T15:00:00+00:00', '--job-id', '115', '--raw', '--subdir', 'DAGS_FOLDER/hw_dag.py', '--cfg-path', '/tmp/tmp5iytuuub']
+[2024-03-23T17:01:24.409+0000] {standard_task_runner.py:88} INFO - Job 115: Subtask pipeline
+[2024-03-23T17:01:24.576+0000] {task_command.py:423} INFO - Running <TaskInstance: car_price_prediction.pipeline scheduled__2022-07-20T15:00:00+00:00 [running]> on host df807d1603c7
+[2024-03-23T17:01:24.732+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='car_price_prediction' AIRFLOW_CTX_TASK_ID='pipeline' AIRFLOW_CTX_EXECUTION_DATE='2022-07-20T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-07-20T15:00:00+00:00'
+[2024-03-23T17:01:32.443+0000] {pipeline.py:113} INFO - model: LogisticRegression, acc_mean: 0.7591, acc_std: 0.0075
